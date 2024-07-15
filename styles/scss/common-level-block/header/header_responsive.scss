@@ -1,0 +1,99 @@
+@import "../../mixins";
+
+@media (max-width: 650px) {
+
+  .header-nav__top {
+    padding: 10px 0;
+  }
+
+  .header-nav__top-panel {
+    padding: 0 10px;
+    @include display-flex__sapce-between;
+
+    .community-and-partners {
+      display: none;
+    }
+
+    .green-realtors-program {
+      color: var(--color-black);
+      display: block;
+      font-weight: var(--fw-700);
+      font-size: var(--fs-16);
+      line-height: var(--lh-19_6);
+    }
+
+    .analysis__contact-us {
+      width: 44%;
+      margin-right: 10px;
+
+      .analysis-p {
+        display: none;
+      }
+
+      .analysis-span {
+        font-weight: var(--fw-700);
+        font-size: var(--fs-16);
+        padding-left: 10px;
+        color: var(--color-black);
+
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .header__logo {
+    width: 40%;
+    margin-left: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .burger {
+    margin-right: 20px;
+    display: block;
+  }
+
+  .header-nav__bottom-panel {
+    .header__menu, .button {
+      display: none;
+    }
+  }
+
+  .header__short-info{
+    width: 94%;
+  }
+
+  .short__title{
+    margin: 0 20px;
+    h1{
+      font-weight: var(--fw-700);
+      font-size: var(--fs-50);
+      line-height: var(--lh-46_2);
+    }
+  }
+  .short__paragraph__button {
+    width: 100% !important;
+    margin: 0 20px;
+    justify-content: normal!important;
+    align-items: start!important;
+    flex-direction: column;
+  }
+
+  .header__short-info {
+    h1 {
+      font-size: var(--fs-50) !important;
+      line-height: var(--lh-46_2) !important;
+    }
+  }
+
+  .short__paragraph__button {
+    p {
+      font-size: var(--fs-18)
+    }
+  }
+
+}

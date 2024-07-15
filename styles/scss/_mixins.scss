@@ -1,0 +1,52 @@
+@mixin center-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin display-flex__sapce-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin opacity__background-image{
+  background-image: url('../../assets/images/header-background-fon.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.5);
+  }
+}
+
+@mixin position-center__down{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin position-start__start{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+@mixin display-grid__simple-condition{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+@mixin position-left__down{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}

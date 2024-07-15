@@ -1,0 +1,67 @@
+@import "../../mixins";
+
+.button_request{
+  width: 43%;
+  background-color: var(--color-green);
+  @include position-center__down;
+  margin-top: 50px;
+  margin-left: 85px;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-16);
+  line-height: var(--lh-21);
+}
+
+.cleantech-style{
+  color: var(--color-black-green);
+  .link__icon{
+
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-grey-opacity);
+
+    svg{
+      path{
+        fill: var(--color-black-green)!important;
+      }
+    }
+  }
+}
+
+.the__best-button{
+  justify-content: end!important;
+  margin: 0;
+  .caruseel__buttons{
+    .car__button{
+      background-color: rgba(0,0,0, 0);
+      border: 1px solid #fff;
+      svg{
+        fill: var(--color-white);
+      }
+    }
+  }
+}
+
+.projects__carusel{
+  grid-template-columns: 1fr 1fr 0.3fr !important;
+}
+
+ .slide_opacity{
+   position: relative!important;
+   span{
+     position: absolute;
+     left: 0;
+     font-size: var(--fs-24) !important;
+
+     &:last-child{
+       right: -29px;
+     }
+   }
+
+   .solution-icon{
+     position: absolute;
+   }
+
+   .last-solution-icon{
+     right: -100px;
+   }
+ }

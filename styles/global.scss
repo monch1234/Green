@@ -1,0 +1,25 @@
+//global styles ang reset styles
+
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family:var(--font-family);
+  color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+li{list-style-type: none}
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+span{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

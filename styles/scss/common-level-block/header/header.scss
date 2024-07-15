@@ -1,0 +1,177 @@
+@import "../../mixins";
+
+
+.size {
+  width: 100vw;
+  max-width: 1440px;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  @include opacity__background-image;
+
+  .header-nav {
+    width: 100%;
+  }
+
+
+  &-nav__top {
+    width: 100%;
+    background-color: var(--color-white);
+    @include center-block;
+
+  }
+}
+
+.header-nav__top-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header-container {
+  width: 100%;
+  z-index: 1;
+
+  @include display-grid__simple-condition ;
+}
+
+
+.community-and-partners {
+  color: var(--color-black);
+  font-weight: var(--fw-700);
+  font-style: var(--fs-14);
+  line-height: var(--lh-19_6);
+
+  @include display-flex__sapce-between;
+}
+
+.green-realtors-program{display: none}
+
+.analysis__contact-us {
+  width: 26%;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-14);
+  line-height: var(--lh-21);
+  @include display-flex__sapce-between;
+
+  .analysis-p {
+    line-height: var(--lh-19_6);
+    color: var(--color-black);
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-weight: var(--fw-700);
+      margin-right: 10px;
+    }
+  }
+
+  .analysis-span {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-14);
+    line-height: var(--lh-21);
+    padding-left: 20px;
+    color: var(--color-green);
+    border-left: 1px solid var(--color-grey-opacity);
+
+    svg {
+      margin-left: 10px;
+    }
+
+    @include center-block
+  }
+}
+
+.header-nav__bottom {
+  width: 100%;
+  padding-top: 25px;
+  @include center-block;
+}
+
+
+.header-nav__bottom-panel {
+  width: 100%;
+  @include display-flex__sapce-between;
+}
+
+.header__menu {
+  width: 70%;
+  font-family: var(--font-family);
+  font-size: var(--fs-16);
+  line-height: var(--lh-24_3);
+
+  @include display-flex__sapce-between;
+
+  .menu-our__activities {
+    font-weight: var(--fw-700);
+  }
+
+  .menu-our__projects {
+    font-weight: var(--fw-400);
+    color: var(--color-grey-opacity);
+  }
+
+  .menu-our__activities, .menu-our__projects {
+    width: 40%;
+    @include display-flex__sapce-between
+  }
+}
+
+.button{
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+
+span{
+  svg{margin-left: 10px}
+}
+
+.header__short-info{
+  @include center-block;
+
+  .short__title{
+    h1 {
+      font-family: var(--font-family);
+      font-weight: var(--fw-700);
+      font-size: var(--fs-60);
+      line-height: var(--lh-55);
+    }
+  }
+  .short__paragraph__button{
+    width: 35%;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+      font-weight: var(--fw-400);
+      font-size: var(--fs-18);
+      line-height: var(--lh-29_4);
+    }
+
+    .short__btn{
+      background-color: var(--color-green);
+      color: var(--color-white);
+      border-radius: 35px;
+      border: none;
+      padding:20px 30px;
+      font-family: var(--font-family);
+      font-weight: var(--fw-700);
+      font-size: var(--fs-16);
+      line-height: var(--lh-21);
+
+      svg{margin-left: 10px}
+
+      @include center-block;
+    }
+  }
+
+}
+
+.burger{display: none}
