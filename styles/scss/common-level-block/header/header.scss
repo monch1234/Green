@@ -107,16 +107,17 @@
   @include display-flex__sapce-between;
 
   .menu-our__activities {
+    width: 50%;
     font-weight: var(--fw-700);
   }
 
   .menu-our__projects {
+    width: 40%;
     font-weight: var(--fw-400);
     color: var(--color-grey-opacity);
   }
 
   .menu-our__activities, .menu-our__projects {
-    width: 40%;
     @include display-flex__sapce-between
   }
 }
