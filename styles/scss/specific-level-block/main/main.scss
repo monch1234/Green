@@ -46,7 +46,12 @@
 }
 
  .slide_opacity{
+   padding-top: 150px;
    position: relative!important;
+
+   span{
+     padding-top: 150px!important;
+   }
    .last__child-text{
      position: absolute;
      font-size: var(--fs-24) !important;
@@ -68,6 +73,16 @@
 
 .projects__slide:last-child{
   background-image: url("../../../../assets/images/generait-energy.png");
+
+  border-top-right-radius: 0!important;
+  border-bottom-right-radius: 0!important;
+}
+.slide:last-child{
+  .slide_opacity{
+    border-bottom-right-radius: 0!important;
+    border-top-right-radius: 0!important;
+
+  }
 }
 
 .user{
